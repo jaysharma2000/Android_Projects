@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+<!--        <Switch-->
+<!--            android:id="@+id/switch_light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Light Control" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_thermostat"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Thermostat Settings" />-->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Home Control"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Settings"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            />
+
+
+        <!-- Lights Control Section -->
+        <TextView
+            android:id="@+id/tvLights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lights"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+           />
+
+        <Switch
+            android:id="@+id/switchLivingRoomLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Living Room Light"
+            android:padding="8dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <Switch
+            android:id="@+id/switchBedroomLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bedroom Light"
+            android:padding="8dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <!-- Thermostat Control Section -->
+        <TextView
+            android:id="@+id/tvThermostat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thermostat"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+             />
+
+        <SeekBar
+            android:id="@+id/seekBarThermostat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="22"
+            android:padding="8dp"
+            android:layout_marginLeft="25dp"
+             />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temp: "
+                android:layout_marginLeft="35dp"
+                />
+            <TextView
+                android:id="@+id/tvThermostatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22°C"
+                android:textSize="16sp"
+                android:layout_marginLeft="80dp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvFan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan Controls"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <SeekBar
+            android:id="@+id/seekBarFan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="22"
+            android:padding="8dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed: "
+                android:layout_marginLeft="35dp"
+                />
+            <TextView
+                android:id="@+id/tvFanSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="14sp"
+                android:layout_marginLeft="90dp"
+                />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/button_dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Dashboard"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            />
+
+
+
+
+        <!--        &lt;!&ndash; Save Settings Button &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/btnSaveSettings"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Save Settings"-->
+<!--            android:padding="8dp"-->
+<!--             />-->
+
+    </LinearLayout>
+</FrameLayout>

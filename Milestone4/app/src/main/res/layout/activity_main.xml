@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    @Parcelize-->
+<!--    data class Restaurant(-->
+<!--    val id: Int,-->
+<!--    val name: String,-->
+<!--    val image: Int,-->
+<!--    val rating: Double,-->
+<!--    val deliveryTime: String-->
+<!--    ): Parcelable-->
+
+<!--    @Parcelize-->
+<!--    data class MenuItem(-->
+<!--    val id: Int,-->
+<!--    val name: String,-->
+<!--    val image: Int,-->
+<!--    val price: Double-->
+<!--    ): Parcelable-->
+
+<!--    @Parcelize-->
+<!--    data class CartItem(-->
+<!--    val menuItem: MenuItem,-->
+<!--    var quantity: Int-->
+<!--    ): Parcelable-->
+
+
+<!--    class HomeFragment : Fragment() {-->
+<!--    private lateinit var binding: FragmentHomeBinding-->
+<!--    private val restaurants = listOf(-->
+<!--    Restaurant(1, "Burger King", R.drawable.product_placeholder, 3.4, "20 min"),-->
+<!--    Restaurant(2, "Pizza Hut", R.drawable.product_placeholder, 3.8, "10 min"),-->
+<!--    Restaurant(3, "Dominos", R.drawable.product_placeholder, 3.9, "60 min"),-->
+<!--    Restaurant(4, "Hotel King", R.drawable.product_placeholder, 2.5, "40 min"),-->
+<!--    Restaurant(5, "Paras Restro", R.drawable.product_placeholder, 5.0, "35 min"),-->
+<!--    Restaurant(6, "Family restaurant", R.drawable.product_placeholder, 5.0, "35 min"),-->
+<!--    Restaurant(7, "Raghuveer Sweets", R.drawable.product_placeholder, 5.0, "35 min"),-->
+<!--    Restaurant(8, "Hotel Gauri IN", R.drawable.product_placeholder, 5.0, "35 min")-->
+
+<!--    )-->
+
+<!--    override fun onCreateView(-->
+<!--    inflater: LayoutInflater, container: ViewGroup?,-->
+<!--    savedInstanceState: Bundle?-->
+<!--    ): View {-->
+<!--    binding = FragmentHomeBinding.inflate(inflater, container, false)-->
+
+<!--    binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())-->
+
+<!--    val adapter = RestaurantAdapter(restaurants) { restaurant ->-->
+<!--    findNavController().navigate(-->
+<!--    HomeFragmentDirections.actionHomeFragmentToMenuFragment(restaurant.id)-->
+<!--    )-->
+<!--    }-->
+<!--    binding.recyclerView.adapter = adapter-->
+
+<!--    return binding.root-->
+<!--    }-->
+
+<!--home-->
+<!--<androidx.recyclerview.widget.RecyclerView-->
+<!--android:id="@+id/recyclerView"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:clipToPadding="false"-->
+<!--android:padding="16dp"-->
+<!--android:layout_marginTop="70dp"-->
+<!--    />-->
+
+
+<!--    class RestaurantAdapter(-->
+<!--    private var restaurants: List<Restaurant>,-->
+<!--private val onClick: (Restaurant) -> Unit-->
+<!--) : RecyclerView.Adapter<RestaurantAdapter.ViewHolder>() {-->
+
+<!--    inner class ViewHolder(val binding: ItemRestaurantBinding) : RecyclerView.ViewHolder(binding.root)-->
+
+<!--    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {-->
+<!--    val binding = ItemRestaurantBinding.inflate(LayoutInflater.from(parent.context), parent, false)-->
+<!--    return ViewHolder(binding)-->
+<!--    }-->
+
+<!--    override fun onBindViewHolder(holder: ViewHolder, position: Int) {-->
+<!--    val restaurant = restaurants[position]-->
+<!--    holder.binding.apply {-->
+<!--    tvName.text = restaurant.name-->
+<!--    ivImage.setImageResource(restaurant.image)-->
+<!--    tvRating.text = "⭐ ${restaurant.rating}"-->
+<!--    tvDeliveryTime.text = restaurant.deliveryTime-->
+<!--    root.setOnClickListener { onClick(restaurant) }-->
+<!--    }-->
+<!--    }-->
+
+
+<!--restaurant-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--android:padding="16dp"-->
+<!--android:background="?attr/selectableItemBackground"-->
+<!--android:gravity="center_vertical">-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/ivImage"-->
+<!--    android:layout_width="60dp"-->
+<!--    android:layout_height="60dp"-->
+<!--    android:scaleType="centerCrop"-->
+<!--    android:src="@drawable/product_placeholder"-->
+<!--    android:layout_marginEnd="12dp"/>-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_weight="1"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Restaurant Name"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvRating"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="4.5"-->
+<!--        android:textSize="14sp"-->
+<!--        android:paddingTop="4dp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvDeliveryTime"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Delivery: 30 mins"-->
+<!--        android:textSize="14sp"-->
+<!--        android:paddingTop="4dp"/>-->
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

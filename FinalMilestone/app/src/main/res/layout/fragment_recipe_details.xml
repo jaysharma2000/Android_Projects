@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RecipeDetailsFragment">
+
+    <ImageView
+        android:id="@+id/recipeImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Recipe title"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/ingredientsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Recipe title"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/instructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Recipe title"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="20dp"
+        />
+
+</FrameLayout>

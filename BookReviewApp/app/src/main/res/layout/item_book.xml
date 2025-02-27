@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+
+    <!-- TextView for User ID -->
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: 1"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_alignParentStart="true" />
+
+    <!-- TextView for User Name -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewId"
+        android:layout_marginTop="4dp" />
+
+    <!-- TextView for User Email -->
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewName"
+        android:layout_marginTop="4dp" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VehicleInsuranceClaimApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="policy_array">
+        <item>Comprehensive Insurance</item>
+        <item>Third-Party Insurance</item>
+        <item>Personal Accident Cover</item>
+        <item>Zero Depreciation Cover</item>
+        <item>Roadside Assistance</item>
+    </string-array>
+</resources>

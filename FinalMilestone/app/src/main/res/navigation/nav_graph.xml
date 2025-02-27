@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.finalmilestone.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.example.finalmilestone.ui.RecipeListFragment"
+        android:label="RecipeListFragment" >
+        <action
+            android:id="@+id/action_recipeListFragment_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment" />
+        <action
+            android:id="@+id/action_recipeListFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <argument
+            android:name="categoryId"
+            app:argType="long"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailsFragment"
+        android:name="com.example.finalmilestone.ui.RecipeDetailsFragment"
+        android:label="RecipeDetailsFragment" >
+        <action
+            android:id="@+id/action_recipeDetailsFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment" />
+
+        <argument
+            android:name="recipeId"
+            app:argType="long"/>
+    </fragment>
+</navigation>

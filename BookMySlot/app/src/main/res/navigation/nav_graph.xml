@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.bookmyslot.ui.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.bookmyslot.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.bookmyslot.ui.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.bookmyslot.ui.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_addInterviewSlotFragment"
+            app:destination="@id/addInterviewSlotFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_viewAllSlotsFragment"
+            app:destination="@id/viewAllSlotsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInterviewSlotFragment"
+        android:name="com.example.bookmyslot.ui.AddInterviewSlotFragment"
+        android:label="AddInterviewSlotFragment" >
+        <action
+            android:id="@+id/action_addInterviewSlotFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewAllSlotsFragment"
+        android:name="com.example.bookmyslot.ui.ViewAllSlotsFragment"
+        android:label="fragment_view_all_slots"
+        tools:layout="@layout/fragment_view_all_slots" >
+        <action
+            android:id="@+id/action_viewAllSlotsFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment" />
+        <action
+            android:id="@+id/action_viewAllSlotsFragment_to_updateInterviewSlotFragment"
+            app:destination="@id/updateInterviewSlotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateInterviewSlotFragment"
+        android:name="com.example.bookmyslot.ui.UpdateInterviewSlotFragment"
+        android:label="fragment_update_interview_slot"
+        tools:layout="@layout/fragment_update_interview_slot" >
+        <action
+            android:id="@+id/action_updateInterviewSlotFragment_to_viewAllSlotsFragment"
+            app:destination="@id/viewAllSlotsFragment" />
+
+        <argument
+            android:name="slot"
+            app:argType="com.example.bookmyslot.model.InterviewSlot" />
+    </fragment>
+</navigation>

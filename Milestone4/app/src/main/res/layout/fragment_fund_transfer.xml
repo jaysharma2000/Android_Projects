@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FundTransferFragment">
+
+    <TextView
+        android:id="@+id/transferFund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer Fund"
+
+        android:layout_marginTop="100dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+
+        >
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            />
+
+        <EditText
+            android:id="@+id/accountnumber"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter account number"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            />
+
+        <Button
+            android:id="@+id/transferButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

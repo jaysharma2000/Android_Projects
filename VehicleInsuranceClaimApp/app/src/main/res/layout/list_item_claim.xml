@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="11dp"
+    android:layout_marginLeft="19dp">
+
+    <TextView
+        android:id="@+id/tvClaimTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Claim"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/tvClaimId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Claim ID:"
+        android:textColor="@color/headingColor"
+        android:textSize="15dp"
+        />
+
+        <TextView
+            android:id="@+id/tvPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Policy:"
+            android:textColor="@color/headingColor"
+            android:textSize="15dp"
+            />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textColor="@color/headingColor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textColor="@color/headingColor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvDateSubmitted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Submitted:"
+        android:textColor="@color/headingColor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvDateUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Updated:"
+        android:textColor="@color/headingColor"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:id="@+id/deleteClaimBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Delete"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/material_on_background_emphasis_medium"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:contextClickable="true"
+        android:textAllCaps="false"
+        />
+
+    <ImageView
+        android:id="@+id/claimImage"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-100dp"
+        />
+</LinearLayout>

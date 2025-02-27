@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FileClaimFragment"
+    android:background="@drawable/dashboard3"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner
+        android:id="@+id/policySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50pt"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <EditText
+        android:id="@+id/claimDiscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70pt"
+        android:hint="write discription"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="95pt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="130dp"
+        />
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:layout_marginTop="172pt"
+        android:layout_marginLeft="30dp"
+        />
+
+    <Button
+        android:id="@+id/submitClaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Claim"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250pt"
+        android:textColor="@color/material_on_background_emphasis_medium"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_700"
+        />
+
+</FrameLayout>

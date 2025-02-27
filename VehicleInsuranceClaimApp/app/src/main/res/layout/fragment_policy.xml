@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.PolicyFragment"
+    android:background="@drawable/dashboard3"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/addPolicyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Policy"
+        android:textSize="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:textColor="@color/material_on_background_emphasis_medium"
+
+        />
+
+    <Spinner
+        android:id="@+id/policyDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/policy_array"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        />
+
+    <EditText
+        android:id="@+id/vehicleTypeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Type"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <EditText
+        android:id="@+id/vehicleNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Number"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+     <Button
+         android:id="@+id/savePolicyButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Save Policy"
+         android:layout_marginTop="290dp"
+         android:layout_gravity="center_horizontal"
+         android:textColor="@color/material_on_background_emphasis_medium"
+         android:textStyle="bold"
+         android:backgroundTint="@color/teal_700"
+         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/policyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/transparent"/>
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <!-- Wrapper for centering all content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <!-- Field for name -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="textPersonName"/>
+
+        <!-- Field for email -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Button for adding data -->
+        <Button
+            android:id="@+id/btnAddData"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Add Data"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="22dp"
+            />
+
+        <Button
+            android:id="@+id/btnUpdateData"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Update Data"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="22dp"
+            />
+
+        <Button
+            android:id="@+id/btnDeleteData"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Delete Data"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="22dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

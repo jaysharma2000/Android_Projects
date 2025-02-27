@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DashboardFragment"
+    android:background="@drawable/dashboard3"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/claimHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Claim History"
+            android:layout_marginLeft="32dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/material_on_background_emphasis_medium"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/myPolicies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Policies"
+            android:layout_marginLeft="32dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/material_on_background_emphasis_medium"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:text="Secure your journey, claim
+        with ease."
+        android:textSize="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="30dp"
+        android:lineHeight="38dp"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:textColor="@color/material_on_background_emphasis_medium"
+        />
+
+    <Button
+        android:id="@+id/startClaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Your Claim"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="170pt"
+        android:textColor="@color/material_on_background_emphasis_medium"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_700"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/updateClaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Claim"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="195pt"
+        android:textColor="@color/material_on_background_emphasis_medium"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_700"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/showCompanies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insurance Companies"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="219pt"
+        android:textColor="@color/material_on_background_emphasis_medium"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_700"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/googleMaps"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Find nearby Service Centers"
+        android:layout_marginTop="250pt"
+        android:textAllCaps="false"
+        />
+
+</FrameLayout>
